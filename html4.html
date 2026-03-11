@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        tfoot {
+            font-weight: bold;
+            background-color: #f2f2f2;
+        }
+
+        .highlight {
+            background-color: #ffeb3b;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Timetable</h1>
+    <p>This is the timetable of the students for the week.</p>
+
+    <table>
+        <!-- Table Caption -->
+        <caption>Class Schedule</caption>
+
+        <!-- Table Head -->
+        <thead>
+            <tr>
+                <th rowspan="2">Time</th>
+                <th colspan="3">Days</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <th>Wednesday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>8:00 AM - 9:00 AM</td>
+                <td>Math</td>
+                <td>English</td>
+                <td class="highlight">Science</td>
+            </tr>
+            <tr>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>History</td>
+                <td class="highlight">Geography</td>
+                <td>Physical Education</td>
+            </tr>
+            <tr>
+                <td>10:00 AM - 11:00 AM</td>
+                <td>Biology</td>
+                <td>Computer Science</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>11:00 AM - 12:00 PM</td>
+                <td>Literature</td>
+                <td>Math</td>
+                <td>History</td>
+            </tr>
+            <tr>
+                <td>12:00 PM - 1:00 PM</td>
+                <td>Lunch Break</td>
+                <td>Lunch Break</td>
+                <td>Lunch Break</td>
+            </tr>
+            <tr>
+                <td>1:00 PM - 2:00 PM</td>
+                <td>Art</td>
+                <td>Music</td>
+                <td class="highlight">Physical Education</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td colspan="4">Note: Highlighted cells are important activities.</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
